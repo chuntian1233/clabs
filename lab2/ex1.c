@@ -7,6 +7,7 @@ int main()
     {
         n=n/10;
         b++;
+        
     }
     while (n>0);
     printf("unsigned int max:%d\n",b);
