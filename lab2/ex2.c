@@ -1,22 +1,21 @@
-#include<stdio.h>
-main()
-{
-    char input_char;
-    int dec[5],bin[10];
-    int i=0,j=0,c;
-    int input=0,count=0;
-    while((input_char=getchar())!='\n')
-      dec[i]=(int)(input_char-'0');
-      i++;
-    i--;
-    for(;i>=0;i--)
-    for(c=0;c<j;c++)
-      dec[i]=dec[i]*10;
-      input=input+dec[i];
-    j++;
-    for(;i>=0;i--)
-      printf("%d",bin[i]);
-      count++;
-      printf("%d",count); 
+#include <stdio.h>
 
+ int main()
+{
+  char c[5];
+  int count;
+  int i=0;
+  unsigned int input=0;
+  printf("输入一个正整数\n");
+  while( (c[i] = getchar())!= '\n' )
+  {
+    input=10*input+(c[i]-'0');
+  }   
+      for(count = 0;input != 0;input>>= 1){
+      if (input & 01)
+       count++;
+       }
+   printf("%d\n",count);
+   return 0;
+  
 }
