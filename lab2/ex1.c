@@ -1,13 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    unsigned int a = 1; 
-  
-    while (a>0)
-    {
-        a++;
-    }
-    printf("unsigned int max value:%u\n", a-1 );
+    unsigned int a = 0; 
+    a=~a;
+
+    printf("unsigned int max value:%u\n", a );
 
     unsigned int n = a - 1;
     int b = 0; 
